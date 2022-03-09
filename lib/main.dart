@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:get/get.dart';
+import 'package:getx_structure/app/ui/components/dong_theme.dart';
 
 void main() {
   runApp(const MyApp());
@@ -14,11 +15,7 @@ class MyApp extends StatelessWidget {
     return GetMaterialApp(
       title: 'Flutter Demo',
       debugShowCheckedModeBanner: false,
-      theme: ThemeData(
-          primarySwatch: Colors.blue,
-          appBarTheme: const AppBarTheme(
-              backgroundColor: Colors.white,
-              titleTextStyle: TextStyle(color: Colors.black))),
+      theme: DongThemes.lightTheme,
       home: HomePage(),
     );
   }
